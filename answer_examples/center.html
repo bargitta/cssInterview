@@ -27,10 +27,24 @@
 				border-color: cadetblue
 			}
 			.size-frame{
-				height: 300px;
+				height: 100px;
 				margin: auto;
 				vertical-align: middle;
-				line-height: 300px;
+				line-height: 100px;
+			}
+			.table-frame{
+				margin: 10px;
+				height: 100px;
+				display: table;
+			}
+			.table-frame .table-cell{
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.flex-box{
+				margin:10px;
+				height: 100;
+				display: flex;
 			}
 		</style>
 	</head>
@@ -42,17 +56,28 @@
 			nisi ad veniam! Non, iure dolorem voluptatibus! Voluptates, molestiae minima iure dignissimos quod. Lorem ipsum dolor sit
 			amet, consectetur adipisicing elit. Magni aperiam quos provident delectus minus rerum quod, architecto tempora, pariatur,
 			aut harum. Aperiam quis aut et vel, sunt facere itaque voluptate!</p>
-			
 		<div class="outer-frame">
-		<!--use margin to ceter align the inner div-->
+			<!--use margin to center align the inner div-->
 			<div class="inner-frame horizontal-center">lorem ipsum dolor sit amet, consectetur</div>
-		</div>	
-		
+		</div>
 		<div class="outer-frame">
-		<!--use line height=box height and vertical-align to center the content in a div-->
+			<!--use line height=box height and vertical-align to center the content in a div, constraint is the text is only one line-->
 			<p class="size-frame horizontal-center">vertical and horizontal align</p>
 		</div>
-		
+		<!--use table layout to vertical align div inside another div-->
+		<div class="table-frame">
+			<p class="table-cell">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eveniet iure ad. Excepturi est dolorum error eligendi
+				quibusdam quod explicabo veniam quis. Id deserunt minima fuga sint, dolorum, veniam suscipit.Lorem ipsum dolor sit amet,
+				consectetur adipisicing elit. Consequatur laudantium, fuga possimus dignissimos assumenda voluptatem sapiente harum, eveniet
+				est illum, illo cum nesciunt, dolorum ratione? Omnis laboriosam, et error sequi!</p>
+		</div>
+		<!--use flex layout to centralize multi-line text-->
+		<div class="flex-box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eveniet iure ad. Excepturi est dolorum error eligendi
+				quibusdam quod explicabo veniam quis. Id deserunt minima fuga sint, dolorum, veniam suscipit.Lorem ipsum dolor sit amet,
+				consectetur adipisicing elit. Consequatur laudantium, fuga possimus dignissimos assumenda voluptatem sapiente harum, eveniet
+				est illum, illo cum nesciunt, dolorum ratione? Omnis laboriosam, et error sequi!</p>
+		</div>
 	</body>
 
 </html>

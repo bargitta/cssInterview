@@ -1,5 +1,7 @@
 # cssInterview
-This repository contains basic concepts of CSS and some examples like how to deign a blog page with using different techniques.
+This repository contains basic concepts of CSS and some frequently used patterns in my daily work. You can find answers in examples, which includes how to center align a div, 
+how to draw circles, triangles with CSS， how to design a blog page with different techniques, etc.
+
 Hopefully it can help you in your daily work and job interviews.
 ## section one: Basic concepts
 1. What is box model?
@@ -26,4 +28,6 @@ Hopefully it can help you in your daily work and job interviews.
 3. How to make a two column Web page? a three column Web page?
 
 4. How to draw a triangle? a circle? a colored square?
+
+5. How to make a tab view?
 
