@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>center align an element</title>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			h1{
+				font-size: 2em;
+			}
+			.horizontal-center{
+				text-align: center
+			}
+			.main-paragraph{
+				padding: 20px;
+				background-color: lightgrey;
+			}
+			div {
+				border:solid 2px
+			}
+			.outer-frame{
+				margin:10px;
+			}
+			.outer-frame .inner-frame{
+				margin:20px;
+				padding: 10px;
+				border-color: cadetblue
+			}
+			.size-frame{
+				height: 300px;
+				margin: auto;
+				vertical-align: middle;
+				line-height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--use text-align center-->
+		<h1 class="horizontal-center">How to center aliagn an element</h1>
+		<!--use the same padding to center align the content-->
+		<p class="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque provident, hic! Officiis totam earum provident alias, saepe
+			nisi ad veniam! Non, iure dolorem voluptatibus! Voluptates, molestiae minima iure dignissimos quod. Lorem ipsum dolor sit
+			amet, consectetur adipisicing elit. Magni aperiam quos provident delectus minus rerum quod, architecto tempora, pariatur,
+			aut harum. Aperiam quis aut et vel, sunt facere itaque voluptate!</p>
+			
+		<div class="outer-frame">
+		<!--use margin to ceter align the inner div-->
+			<div class="inner-frame horizontal-center">lorem ipsum dolor sit amet, consectetur</div>
+		</div>	
+		
+		<div class="outer-frame">
+		<!--use line height=box height and vertical-align to center the content in a div-->
+			<p class="size-frame horizontal-center">vertical and horizontal align</p>
+		</div>
+		
+	</body>
+
+</html>
