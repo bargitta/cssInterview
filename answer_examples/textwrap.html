@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>text overflow</title>
+	<style>
+	.left-pane{
+		float:left;
+		width: 300px;
+		border:1px solid pink;
+
+	}
+	.left-pane div{
+			margin:10px;
+			white-space: nowrap;
+			overflow: hidden;
+			border: 2px solid black;
+			text-overflow:ellipsis;
+	}
+	.left-pane p{
+			margin:10px;
+			overflow:scroll;
+			height: 100px;
+			border: 2px solid black;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="left-pane">
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente exercitationem dolorem, expedita voluptate sit. Quod eveniet iste non consequatur recusandae, impedit, pariatur, reiciendis dolores, reprehenderit nulla necessitatibus aspernatur maiores. Fugiat.</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente exercitationem dolorem, expedita voluptate sit. Quod eveniet iste non consequatur recusandae, impedit, pariatur, reiciendis dolores, reprehenderit nulla necessitatibus aspernatur maiores. Fugiat.</p>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente exercitationem dolorem, expedita voluptate sit. Quod eveniet iste non consequatur recusandae, impedit, pariatur, reiciendis dolores, reprehenderit nulla necessitatibus aspernatur maiores. Fugiat.</div>
+	</div>
+	<div class="right-pane">
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nemo officia repellendus nisi fugit. Reprehenderit repudiandae, velit temporibus quo laborum provident iusto a quae, fugit, fugiat dolorum. Praesentium, possimus natus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, libero. Laborum expedita, commodi architecto aspernatur inventore quis? Repellendus odio sunt necessitatibus voluptatibus, accusantium velit eos perferendis, voluptas autem obcaecati iure!</div>
+	</div>
+</body>
+</html>
