@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float layout</title>
+</head>
+<style>
+	.container{
+		margin:10px;
+		background-color:pink;
+	}
+	.cf:after {
+	  content: ' ';
+	  display: block;
+	  clear: both;
+	}
+
+	.cfm:before,
+	.cfm:after {
+  		content: ' ';
+  		display: table;
+	}
+	.cfm:after {
+	  clear: both;
+	}
+</style>
+<body>
+	<!-- use clear -->
+	<div class="container">
+	  <div style="float: left;"><p>I am floated</p></div>
+	  <div style="float: left;"><p>I am floated</p></div>
+	  <div style="clear: both;"></div>
+	</div>
+	<!-- with margin collapse -->
+	<div class="container cf">
+	  <div style="float: left;"><p>I am floated</p></div>
+	  <div style="float: left;"><p>I am floated</p></div>
+	</div>
+
+	<div class="container cfm">
+	  <div style="float: left;"><p>I am floated</p></div>
+	  <div style="float: left;"><p>I am floated</p></div>
+	</div>
+	
+</body>
+</html>
