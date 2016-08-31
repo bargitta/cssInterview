@@ -20,6 +20,8 @@ Hopefully it can help you in your daily work and job interviews.
 
 8. What is pseudo element? what is pseudo class?
 
+9. How to calculate the width of an element? (box-sizing: border-box vs. context-box)
+
 ## Section two: Coding questions
 1. How to center align a paragraph?
 
